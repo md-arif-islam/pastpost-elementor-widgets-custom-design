@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f2ee;
+  margin-top: 50px;
+}
+
+.featured__slider {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+
+.featured__slider .featured__card {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 55px;
+  gap: 10px;
+  width: 85%;
+}
+
+.featured__slider .featured__card--img img {
+  width: 50px;
+  height: auto;
+}
+
+.featured__slider .featured__card--body {
+  padding-left: 30px;
+}
+.featured__slider .featured__card--body h2 {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  color: #233161;
+  margin-bottom: 1.5rem;
+}
+.featured__slider .featured__card--body p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424040;
+}
+
+.featured__slider .owl-stage-outer {
+  flex: 0 0 auto;
+  width: 85%;
+}
+
+.featured__slider .owl-carousel .owl-nav.disabled {
+  display: block !important;
+}
+
+.featured__slider .owl-nav {
+  flex: 0 0 auto;
+  width: 15% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured__slider .owl-nav i {
+  background: #f5f2ee;
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  color: #cac8c6;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(158, 158, 158, 0.5);
+}
+
+.featured__slider .owl-nav:hover,
+.featured__slider .owl-nav button:hover {
+  background: transparent !important;
+}
+
+.featured__slider .owl-nav i:hover {
+  background: rgba(35, 49, 97, 0.05);
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  color: #000000;
+  font-size: 20px;
+  border-radius: 50% !important;
+  border: 1px solid rgba(158, 158, 158, 0.5);
+}
+
+@media (max-width: 425px) {
+  .featured__card {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .owl-stage-outer,
+  .featured__slider .owl-nav {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+  .featured__card {
+    width: 100% !important;
+  }
+}

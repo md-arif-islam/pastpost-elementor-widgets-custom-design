@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ==========BOOTSTARP CSS LINK========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+    <title>Slider</title>
+
+</head>
+
+<body>
+
+
+    <div class="blog--div">
+        <div class="container">
+            <div class="blog">
+                <div class="owl-carousel owl-theme blog__slider">
+
+                    <div class="blog__card d-flex align-items-stretch">
+                        <div class="blog__card--img">
+                            <img src="./assets/img/Vector (1).png" alt="">
+                        </div>
+                        <div class="blog__card--date">
+                            <h6><img src="./assets/img/calendar_today.png" alt=""> <span>September 3, 2022</span> -
+                                <span>12 min read</span></h6>
+                        </div>
+                        <div class="blog__card--title">
+                            <h1>Guide allows you to record messages in your computer fgdf flkdfg dfgjdf fdgkhdjfk
+                                dfhgdjf dsfhvsdjkm ffsdjfhsdj fsdnmfgsdn fnsdmgfmnsd fcndsjgbfm, sd</h1>
+                        </div>
+                        <div class="blog__card--dec">
+                            <p>Guide allows you to record messages in your computer</p>
+                        </div>
+                        <div class="blog__card--cat">
+                            <p>Post Mortem Messages</p>
+                            <p>Digital data management</p>
+                            <p>Heritage List</p>
+                        </div>
+                    </div>
+
+                    <div class="blog__card d-flex align-items-stretch">
+                        <div class="blog__card--img">
+                            <img src="./assets/img/Vector (2).png" alt="">
+                        </div>
+                        <div class="blog__card--date">
+                            <h6><img src="./assets/img/calendar_today.png" alt=""> <span>September 3, 2022</span> -
+                                <span>12 min read</span></h6>
+                        </div>
+                        <div class="blog__card--title">
+                            <h1>Guide allows you to record messages in your computer</h1>
+                        </div>
+                        <div class="blog__card--dec">
+                            <p>Guide allows you to record messages in your computer</p>
+                        </div>
+                        <div class="blog__card--cat">
+                            <p>Post Mortem Messages</p>
+                            <p>Digital data management</p>
+                            <p>Heritage List</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- ==========BOOTSTARP JS LINK========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.blog__slider').owlCarousel({
+                loop: true,
+                margin: 20,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: true,
+                navText: ["<i class='fa-solid fa-arrow-left-long'></i>", "<i class='fa-solid fa-arrow-right-long'></i>"],
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2,
+                    },
+                    1400: {
+                        items: 3,
+                    },
+                }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

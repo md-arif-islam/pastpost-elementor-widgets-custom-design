@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ==========BOOTSTARP CSS LINK========== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Slider</title>
+
+</head>
+
+<body>
+
+
+    <div class="featured__slider--div">
+        <div class="container">
+            <div class="featured">
+                <div class="owl-carousel owl-theme featured__slider">
+                    <div class="featured__card">
+                        <div class="featured__card--img">
+                            <img src="./assets/img/redeem.png" alt="">
+                        </div>
+                        <div class="featured__card--body">
+                            <h2>The gift of being remembered</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took </p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card--img">
+                            <img src="./assets/img/redeem.png" alt="">
+                        </div>
+                        <div class="featured__card--body">
+                            <h2>The gift of being remembered</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took </p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card--img">
+                            <img src="./assets/img/redeem.png" alt="">
+                        </div>
+                        <div class="featured__card--body">
+                            <h2>The gift of being remembered</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took </p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card--img">
+                            <img src="./assets/img/redeem.png" alt="">
+                        </div>
+                        <div class="featured__card--body">
+                            <h2>The gift of being remembered</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took </p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card--img">
+                            <img src="./assets/img/redeem.png" alt="">
+                        </div>
+                        <div class="featured__card--body">
+                            <h2>The gift of being remembered</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took </p>
+                        </div>
+                    </div>
+                    <div class="featured__card">
+                        <div class="featured__card--img">
+                            <img src="./assets/img/redeem.png" alt="">
+                        </div>
+                        <div class="featured__card--body">
+                            <h2>The gift of being remembered</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- ==========BOOTSTARP JS LINK========== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.featured__slider').owlCarousel({
+                loop: true,
+                margin: 50,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: true,
+                navText: ["<i class='fa-solid fa-arrow-left-long'></i>", "<i class='fa-solid fa-arrow-right-long'></i>"],
+                center: true,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                }
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
