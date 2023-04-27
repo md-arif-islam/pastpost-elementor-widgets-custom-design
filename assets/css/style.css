@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,112 +16,115 @@
 }
 
 body {
-  background-color: #f5f2ee;
+  background-color: #fff;
   margin-top: 50px;
 }
 
-.featured__slider {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
+.featured__hslider {
+  display: block;
 }
 
-.featured__slider .featured__card {
-  background-color: #fff;
-  border-radius: 10px;
+.featured__hslider .featured__card {
   display: flex;
+  align-items: center;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 55px;
-  gap: 10px;
-  width: 85%;
 }
 
-.featured__slider .featured__card--img img {
-  width: 50px;
-  height: auto;
+.featured__hslider .featured__card--body {
+  /* margin-top: -10%; */
 }
 
-.featured__slider .featured__card--body {
-  padding-left: 30px;
-}
-.featured__slider .featured__card--body h2 {
-  font-family: "Cormorant Garamond";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 100%;
-  color: #233161;
-  margin-bottom: 1.5rem;
-}
-.featured__slider .featured__card--body p {
-  font-family: "Poppins";
+.featured__hslider .featured__card--body h6 {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 160%;
-  color: #424040;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #12141d;
 }
 
-.featured__slider .owl-stage-outer {
-  flex: 0 0 auto;
-  width: 85%;
+.featured__hslider .featured__card--body h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 56px;
+  color: #12141d;
 }
 
-.featured__slider .owl-carousel .owl-nav.disabled {
+.featured__hslider .featured__card--body p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  color: #12141d;
+  opacity: 0.7;
+}
+
+.featured__hslider .featured__card--img {
+  text-align: right;
+  text-align: -webkit-right;
+}
+
+.featured__hslider .featured__card--img img {
+  width: 80%;
+  text-align: right;
+  height: auto;
+  border-radius: 10px;
+}
+
+.featured__hslider .owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
   display: block !important;
 }
 
-.featured__slider .owl-nav {
-  flex: 0 0 auto;
-  width: 15% !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.featured__hslider .owl-nav {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.featured__slider .owl-nav i {
-  background: #f5f2ee;
+.featured__hslider .owl-nav i {
+  background: #fff;
   width: 50px;
-  line-height: 50px;
+  line-height: 47px;
   height: 50px;
-  color: #cac8c6;
+  color: #000;
   font-size: 20px;
   border-radius: 50%;
-  border: 1px solid rgba(158, 158, 158, 0.5);
+  border: 2px solid #000;
 }
 
-.featured__slider .owl-nav:hover,
-.featured__slider .owl-nav button:hover {
+.featured__hslider .owl-nav:hover,
+.featured__hslider .owl-nav button:hover {
   background: transparent !important;
 }
 
-.featured__slider .owl-nav i:hover {
-  background: rgba(35, 49, 97, 0.05);
-  width: 50px;
-  line-height: 50px;
-  height: 50px;
-  color: #000000;
+.featured__hslider .owl-nav i:hover {
+  background: #1e325d;
+  color: #fff;
   font-size: 20px;
   border-radius: 50% !important;
-  border: 1px solid rgba(158, 158, 158, 0.5);
-}
-
-@media (max-width: 425px) {
-  .featured__card {
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
+  border: 2px solid #1e325d;
 }
 
 @media (max-width: 768px) {
-  .owl-stage-outer,
-  .featured__slider .owl-nav {
-    flex: 0 0 auto;
-    width: 100% !important;
+  .featured__hslider .featured__card--img {
+    text-align: center;
+    text-align: -webkit-center;
   }
-  .featured__card {
-    width: 100% !important;
+
+  .featured__hslider .featured__card--img img {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .featured__hslider .featured__card--body h6,
+  .featured__hslider .featured__card--body h2,
+  .featured__hslider .featured__card--body p {
+    text-align: center;
   }
 }

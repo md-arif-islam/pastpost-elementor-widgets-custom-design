@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,101 +19,146 @@ body {
   margin-top: 50px;
 }
 
-.blogs .owl-carousel .owl-stage {
+.post .owl-stage {
   display: flex;
 }
 
-.blog__card {
-  background: #ffffff;
-  box-shadow: 0px 10px 50px -30px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 31px 24px;
-  margin: 10px 0;
-  display: flex;
+.posts__card {
+  background: transparent;
+  margin: 25px 0;
   flex-direction: column;
-  height: 97%;
+  padding: 10px;
 }
 
-.blog__card p.read-more {
-  display: none;
+.posts__card .posts__card--top {
+  display: block;
+  position: relative;
 }
 
-.blog__card .blog__card--img {
-  margin-bottom: 15px;
+.posts__card .posts__card--img {
+  margin-bottom: 20px;
 }
 
-.blog__card .blog__card--img img {
-  width: auto;
-  height: 70px;
-}
-
-.blog__card .blog__card--date {
-  margin-bottom: 15px;
-}
-
-.blog__card .blog__card--date h6 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  text-align: center;
-  color: #424040;
-}
-
-.blog__card .blog__card--date img {
-  width: 17px;
+.posts__card .posts__card--img img {
+  width: 100%;
   height: auto;
-  margin-right: 10px;
+  border-radius: 10px;
 }
 
-.blog__card .blog__card--title {
-  margin-bottom: 15px;
+.posts__card .posts__card--date {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 6px;
 }
 
-.blog__card .blog__card--title h1 {
-  font-family: "Poppins";
+.posts__card .posts__card--date p.date {
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  color: #424040;
-}
-
-.blog__card .blog__card--desc {
-  margin-bottom: 15px;
-}
-
-.blog__card .blog__card--desc p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 141.5%;
-  color: #424040;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 10px;
+  letter-spacing: 0.725px;
+  text-transform: uppercase;
+  color: #12141d;
   margin-bottom: 0 !important;
 }
 
-.blog__card .blog__card--cat {
-  margin-top: auto;
+.posts__card .posts__card--author {
+  display: flex;
+  flex-direction: row;
 }
 
-.blog__card .blog__card--cat p {
-  background: #b2a18a;
-  border-radius: 20px;
-  font-family: "Poppins", Sans-serif;
+.posts__card--author .credit p {
+  margin: 0;
+  padding: 2px 0;
+  text-align: left;
+  margin-left: 7px;
+}
+
+.posts__card--author .credit p.author {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
-  padding: 5px 10px;
+  text-align: left;
+  color: #9e9e9e;
+}
+
+.posts__card--author .credit p.name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: right;
+  color: #424040;
+}
+
+.posts__card--second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  color: #ffffff;
-  margin: 5px 5px 5px 0;
-  display: inline-block;
+}
+
+.posts__card .posts__card--read p.rtime {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: right;
+  color: #9e9e9e;
+}
+.posts__card .posts__card--title,
+.posts__card .posts__card--desc {
+  width: 70%;
+}
+
+.posts__card .posts__card--title {
+  margin: 15px 0 5px 0;
+}
+
+.posts__card .posts__card--title a {
+  text-decoration: none;
+}
+
+.posts__card .posts__card--title h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.posts__card .posts__card--desc {
+  margin-bottom: 0px;
+}
+
+.posts__card .posts__card--desc p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595b61;
+}
+
+.posts__card .posts__card--desc a {
+  text-decoration: none;
+}
+
+.posts__card .posts__card--desc .read_more {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 10px;
 }

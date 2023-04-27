@@ -15,61 +15,69 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="assets/css/blog.css">
 
-    <title>Slider</title>
+    <title>post</title>
 
 </head>
 
 <body>
 
-
-    <div class="blog--div">
+    <div class="post__div">
         <div class="container">
-            <div class="blog">
-                <div class="owl-carousel owl-theme blog__slider">
+            <div class="post">
+                <div class="owl-carousel owl-theme post__slider">
 
-                    <div class="blog__card d-flex align-items-stretch">
-                        <div class="blog__card--img">
-                            <img src="./assets/img/Vector (1).png" alt="">
+                    <div class="posts__card d-flex align-items-stretch">
+                        <div class="posts__card--top">
+                            <div class="posts__card--img">
+                                <a href="">
+                                    <img src="./assets/img/Image.png" alt="">
+                                </a>
+                            </div>
+                            <div class="posts__card--date">
+                                <p class="date">20 Jan 2023</p>
+                            </div>
+
                         </div>
-                        <div class="blog__card--date">
-                            <h6><img src="./assets/img/calendar_today.png" alt=""> <span>September 3, 2022</span> -
-                                <span>12 min read</span></h6>
+                        <div class="posts__card--second">
+                            <div class="posts__card--author">
+                                <div class="avater">
+                                    <img class="rounded-circle" src="./assets/img/Ellipse 47.png" alt="">
+                                </div>
+                                <div class="credit">
+                                    <p class="author">
+                                        Author
+                                    </p>
+                                    <p class="name">
+                                        Pastpost
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="posts__card--read">
+                                <p class="rtime">12 min read</p>
+                            </div>
                         </div>
-                        <div class="blog__card--title">
-                            <h1>Guide allows you to record messages in your computer fgdf flkdfg dfgjdf fdgkhdjfk
-                                dfhgdjf dsfhvsdjkm ffsdjfhsdj fsdnmfgsdn fnsdmgfmnsd fcndsjgbfm, sd</h1>
+                        <div class="posts__card--title">
+                            <a href="/">
+                                <h1>
+                                    Life after death
+                                </h1>
+
+                            </a>
                         </div>
-                        <div class="blog__card--dec">
-                            <p>Guide allows you to record messages in your computer</p>
+                        <div class="posts__card--desc">
+                            <p>
+                                Typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                <a class="read_more" href="/">
+                                    Read more
+                                </a>
+                            </p>
                         </div>
-                        <div class="blog__card--cat">
-                            <p>Post Mortem Messages</p>
-                            <p>Digital data management</p>
-                            <p>Heritage List</p>
+                        <div class="posts__card--bottom">
+
+
                         </div>
                     </div>
 
-                    <div class="blog__card d-flex align-items-stretch">
-                        <div class="blog__card--img">
-                            <img src="./assets/img/Vector (2).png" alt="">
-                        </div>
-                        <div class="blog__card--date">
-                            <h6><img src="./assets/img/calendar_today.png" alt=""> <span>September 3, 2022</span> -
-                                <span>12 min read</span></h6>
-                        </div>
-                        <div class="blog__card--title">
-                            <h1>Guide allows you to record messages in your computer</h1>
-                        </div>
-                        <div class="blog__card--dec">
-                            <p>Guide allows you to record messages in your computer</p>
-                        </div>
-                        <div class="blog__card--cat">
-                            <p>Post Mortem Messages</p>
-                            <p>Digital data management</p>
-                            <p>Heritage List</p>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </div>
@@ -84,7 +92,7 @@
 
     <script>
         $(document).ready(function () {
-            $('.blog__slider').owlCarousel({
+            $('.post__slider').owlCarousel({
                 loop: true,
                 margin: 20,
                 loop: true,
